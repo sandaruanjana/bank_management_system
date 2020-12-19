@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="borderPaneAddUser" prefHeight="738.0" prefWidth="1179.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.UserView.AddUserController">
+   <children>
+      <JFXTextField fx:id="txtUserName" layoutX="230.0" layoutY="172.0" prefHeight="26.0" prefWidth="306.0" promptText="Username" />
+      <JFXComboBox fx:id="cmbRole" layoutX="230.0" layoutY="302.0" prefHeight="26.0" prefWidth="186.0" promptText="Select Role" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="230.0" layoutY="239.0" prefHeight="26.0" prefWidth="305.0" promptText="Password" />
+      <Label layoutX="75.0" layoutY="168.0" text="Username :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="234.0" text="Password :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="298.0" text="Role :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddUser" layoutX="230.0" layoutY="408.0" onAction="#addUserOnAction" prefHeight="39.0" prefWidth="186.0" style="-fx-background-color: #0019c2;" text="Add user" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" />
+         </graphic>
+      </JFXButton>
+      <HBox prefHeight="56.0" prefWidth="1179.0" style="-fx-background-color: #1b55e2;">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="8.0" />
+            <Label prefHeight="54.0" prefWidth="178.0" text="Add User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" />
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

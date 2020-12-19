@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPanePayLoan" prefHeight="331.0" prefWidth="743.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.PaymentView.PayLoanController">
+   <children>
+      <JFXTextField fx:id="txtLoanID" labelFloat="true" layoutX="31.0" layoutY="57.0" onMouseExited="#loanNumberMouseExit" prefHeight="26.0" prefWidth="207.0" promptText="Enter Loan Number" />
+      <JFXTextField fx:id="txtPrincipalBalance" editable="false" labelFloat="true" layoutX="268.0" layoutY="57.0" prefHeight="26.0" prefWidth="207.0" promptText="Principal Balance" />
+      <JFXTextField fx:id="txtPayAmount" labelFloat="true" layoutX="31.0" layoutY="207.0" prefHeight="26.0" prefWidth="207.0" promptText="Paying Amount" />
+      <JFXComboBox fx:id="cmbPaymentMethod" labelFloat="true" layoutX="514.0" layoutY="131.0" prefHeight="26.0" prefWidth="207.0" promptText="Select Payment Method" />
+      <JFXTextField fx:id="txtFine" editable="false" labelFloat="true" layoutX="514.0" layoutY="57.0" prefHeight="26.0" prefWidth="207.0" promptText="FIne" />
+      <JFXButton fx:id="btnClose" layoutX="256.0" layoutY="274.0" onAction="#closeOnAction" prefHeight="28.0" prefWidth="107.0" style="-fx-background-color: red;" text="Close" textFill="WHITE" />
+      <JFXButton fx:id="btnPay" layoutX="380.0" layoutY="274.0" onAction="#payOnAction" prefHeight="28.0" prefWidth="107.0" style="-fx-background-color: #0d3fb9;" text="Pay Amount" textFill="WHITE" />
+      <Label fx:id="lblWrongLoanNumber" layoutX="31.0" layoutY="93.0" text="Wrong Loan Number" textFill="RED" visible="false" />
+      <JFXTextField fx:id="txtTotal" editable="false" labelFloat="true" layoutX="268.0" layoutY="131.0" prefHeight="26.0" prefWidth="207.0" promptText="Total" />
+      <JFXTextField fx:id="txtInterest" editable="false" labelFloat="true" layoutX="31.0" layoutY="131.0" prefHeight="26.0" prefWidth="207.0" promptText="Interest" />
+      <Label fx:id="lblWrongLoanNumber" layoutX="31.0" layoutY="87.0" text="Wrong Loan Number !" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>

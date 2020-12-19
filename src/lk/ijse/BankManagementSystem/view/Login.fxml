@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #1e60ce;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.LoginController">
+    <children>
+        <AnchorPane layoutX="363.0" prefHeight="400.0" prefWidth="342.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="65.0" layoutY="128.0" prefHeight="26.0" prefWidth="237.0" promptText="Username" />
+                <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="64.0" layoutY="196.0" onAction="#loginAction" prefHeight="26.0" prefWidth="238.0" promptText="Password" />
+                <Label layoutX="129.0" layoutY="49.0" text="Sign In">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="20.0" fitWidth="29.0" layoutX="27.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../resources/email.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="29.0" layoutX="27.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../resources/password.png" />
+                    </image>
+                </ImageView>
+                <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="77.0" layoutY="271.0" onAction="#loginAction" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #1950d4;" text="Sign in" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARROW_RIGHT" layoutX="194.0" layoutY="292.0" size="13" />
+            </children>
+        </AnchorPane>
+      <Label layoutX="97.0" layoutY="234.0" text="Asia Bank PLC" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/white-logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

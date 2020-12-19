@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPaneIssueLoan" prefHeight="489.0" prefWidth="836.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.LoanView.IssueLoanController">
+   <children>
+      <JFXTextField fx:id="txtACID" labelFloat="true" layoutX="45.0" layoutY="83.0" prefHeight="26.0" prefWidth="207.0" promptText="Account Number" />
+      <JFXTextField fx:id="txtAmount" labelFloat="true" layoutX="584.0" layoutY="83.0" prefHeight="26.0" prefWidth="207.0" promptText="Amount Applied" />
+      <JFXTextField fx:id="txtPeriod" labelFloat="true" layoutX="46.0" layoutY="153.0" prefHeight="26.0" prefWidth="207.0" promptText="Period (Year)" />
+      <JFXTextField fx:id="txtFirstGuarantorName" labelFloat="true" layoutX="314.0" layoutY="153.0" prefHeight="26.0" prefWidth="207.0" promptText="First Guarantor Name" />
+      <JFXTextField fx:id="txtSecondGuarantorName" labelFloat="true" layoutX="578.0" layoutY="231.0" prefHeight="26.0" prefWidth="207.0" promptText="Second Guarantor Name" />
+      <JFXButton fx:id="btnClose" layoutX="281.0" layoutY="412.0" onAction="#closeOnAction" prefHeight="28.0" prefWidth="107.0" style="-fx-background-color: red;" text="Close" textFill="WHITE" />
+      <JFXButton fx:id="btnIssue" layoutX="413.0" layoutY="412.0" onAction="#issueOnAction" prefHeight="28.0" prefWidth="107.0" style="-fx-background-color: #0d3fb9;" text="Issue" textFill="WHITE" />
+      <JFXComboBox fx:id="cmbLoanType" labelFloat="true" layoutX="314.0" layoutY="83.0" prefHeight="26.0" prefWidth="207.0" promptText="Select Loan Type" />
+      <JFXTextField fx:id="txtFirstGuarantorNic" labelFloat="true" layoutX="578.0" layoutY="153.0" prefHeight="26.0" prefWidth="207.0" promptText="First Guarantor Nic" />
+      <JFXTextField fx:id="txtFirstGuarantorTel" labelFloat="true" layoutX="46.0" layoutY="231.0" prefHeight="26.0" prefWidth="207.0" promptText="First Guarantor Contact" />
+      <JFXTextField fx:id="txtSecondGuarantorNic" labelFloat="true" layoutX="46.0" layoutY="312.0" prefHeight="26.0" prefWidth="207.0" promptText="Second Guarantor Nic" />
+      <JFXTextField fx:id="txtSecondGuarantorTel" labelFloat="true" layoutX="309.0" layoutY="312.0" prefHeight="26.0" prefWidth="207.0" promptText="Second Guarantor Contact" />
+      <JFXTextField fx:id="txtFirstGuarantorAddress" labelFloat="true" layoutX="314.0" layoutY="231.0" prefHeight="26.0" prefWidth="207.0" promptText="First Guarantor Address" />
+      <JFXTextField fx:id="txtSecondGuarantorAddress" labelFloat="true" layoutX="578.0" layoutY="312.0" prefHeight="26.0" prefWidth="207.0" promptText="Second Guarantor Address" />
+      <Label fx:id="lblWrongAccountNumber" layoutX="46.0" layoutY="119.0" text="Wrong Account Number !" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>

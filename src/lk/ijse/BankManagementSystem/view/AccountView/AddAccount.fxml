@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPaneAddAccount" prefHeight="214.0" prefWidth="585.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.AccountView.AddAccountController">
+   <children>
+      <JFXComboBox fx:id="cmbSelectAccountType" labelFloat="true" layoutX="294.0" layoutY="66.0" prefHeight="26.0" prefWidth="207.0" promptText="Select Account Type" />
+      <JFXButton fx:id="btnClose" layoutX="161.0" layoutY="153.0" onAction="#closeOnAction" prefHeight="28.0" prefWidth="107.0" style="-fx-background-color: red;" text="Close" textFill="WHITE" />
+      <JFXButton fx:id="btnCreate" layoutX="285.0" layoutY="153.0" onAction="#createOnAction" prefHeight="28.0" prefWidth="107.0" style="-fx-background-color: #0d3fb9;" text="Create" textFill="WHITE" />
+      <JFXTextField fx:id="txtCustomerNic" labelFloat="true" layoutX="57.0" layoutY="66.0" prefHeight="26.0" prefWidth="207.0" promptText="Enter Customer Nic Number" />
+      <Label fx:id="lblWrongNicNumber" layoutX="57.0" layoutY="98.0" text="Wrong Nic Number !" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>

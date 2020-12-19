@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneTransaction" prefHeight="738.0" prefWidth="1179.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.TransactionView.TransactionController">
+   <children>
+      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="39.0" layoutY="89.0" onAction="#searchOnAction" prefHeight="26.0" prefWidth="225.0" promptText="Enter Customer Account Number" />
+      <JFXButton fx:id="btnDeposit" layoutX="324.0" layoutY="82.0" onAction="#depositOnAction" style="-fx-background-color: #0d3fb9;" text="Create Deposit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tableTransaction" layoutX="334.0" layoutY="196.0" prefHeight="526.0" prefWidth="816.0">
+        <columns>
+          <TableColumn fx:id="colTRID" prefWidth="68.79998779296875" text="TRID" />
+          <TableColumn fx:id="colCustomer" prefWidth="147.2000732421875" text="Customer" />
+            <TableColumn fx:id="colAccount" prefWidth="94.4000244140625" text="Account" />
+            <TableColumn fx:id="colAmount" prefWidth="135.199951171875" text="Amount" />
+            <TableColumn fx:id="colDate" minWidth="0.0" prefWidth="158.4000244140625" text="Date" />
+            <TableColumn fx:id="colType" prefWidth="100.0" text="Type" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnWithdraw" layoutX="488.0" layoutY="82.0" onAction="#withdrawOnAction" style="-fx-background-color: #0d3fb9;" text="Create Withdrawal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtCustomerName" editable="false" labelFloat="true" layoutX="39.0" layoutY="232.0" prefHeight="26.0" prefWidth="226.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtAccountNumber" editable="false" labelFloat="true" layoutX="39.0" layoutY="305.0" prefHeight="26.0" prefWidth="226.0" promptText="Account Number" />
+      <JFXTextField fx:id="txtAccountType" editable="false" labelFloat="true" layoutX="38.0" layoutY="383.0" prefHeight="26.0" prefWidth="226.0" promptText="Account Type" />
+      <JFXTextField fx:id="txtAccountBalance" editable="false" labelFloat="true" layoutX="39.0" layoutY="461.0" prefHeight="26.0" prefWidth="226.0" promptText="Account Balance" />
+      <JFXTextField fx:id="txtAccountStatus" editable="false" labelFloat="true" layoutX="39.0" layoutY="538.0" prefHeight="26.0" prefWidth="226.0" promptText="Account Status" />
+      <JFXTextField fx:id="txtFilter" labelFloat="true" layoutX="337.0" layoutY="150.0" onKeyPressed="#filterKeyPressed" prefHeight="26.0" prefWidth="816.0" promptText="Search Transactions" />
+      <Label fx:id="lblWrongAccountNumber" layoutX="38.0" layoutY="121.0" text="Wrong Account Number !" textFill="RED" visible="false" />
+      <Label layoutX="14.0" layoutY="21.0" text="Manage Transaction">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneDashboardView" prefHeight="738.0" prefWidth="1179.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.DashboardViewController">
+   <children>
+      <AnchorPane fx:id="anchorPaneTotalCustomer" layoutX="34.0" layoutY="125.0" prefHeight="170.0" prefWidth="342.0" style="-fx-background-color: #1b55e2; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="20.0" layoutY="97.0" size="50" text="" wrappingWidth="54.057125091552734" />
+            <Label fx:id="lblTotalCustomers" layoutX="95.0" layoutY="87.0" prefHeight="54.0" prefWidth="100.0" text="50" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="54.0" text="Total Customers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="24.0" layoutY="22.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorPaneTransaction" layoutX="414.0" layoutY="125.0" prefHeight="170.0" prefWidth="342.0" style="-fx-background-color: #1b55e2; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;">
+         <children>
+            <Label fx:id="lblTotalTransaction" layoutX="93.0" layoutY="87.0" prefHeight="54.0" prefWidth="240.0" text="50" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="54.0" text="Total Transaction" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="EXCHANGE" layoutX="29.0" layoutY="91.0" size="50" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneTotalLoans" layoutX="798.0" layoutY="125.0" prefHeight="170.0" prefWidth="342.0" style="-fx-background-color: #1b55e2; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;">
+         <children>
+            <Label fx:id="lblTotalLoan" layoutX="93.0" layoutY="87.0" prefHeight="54.0" prefWidth="100.0" text="50" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="54.0" text="Total Loans" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="CHECK_SQUARE_ALT" layoutX="29.0" layoutY="91.0" size="50" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="170.0" fitWidth="416.0" layoutX="34.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/chase-bank-logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="321.0" layoutY="501.0" text="Asia Bank PLC">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="651.0" layoutY="458.0" prefHeight="88.0" prefWidth="462.0" text="00:00:00:PM">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="651.0" layoutY="540.0" text="2020-00-00" textFill="#1b55e2">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

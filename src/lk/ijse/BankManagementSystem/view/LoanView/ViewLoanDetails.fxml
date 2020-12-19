@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPaneLoanDetail" prefHeight="646.0" prefWidth="836.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.LoanView.ViewLoanDetailsController">
+   <children>
+      <JFXTextField fx:id="txtLID" editable="false" labelFloat="true" layoutX="43.0" layoutY="61.0" prefHeight="26.0" prefWidth="207.0" promptText="Loan Number" />
+      <JFXTextField fx:id="txtCustomerName" editable="false" labelFloat="true" layoutX="296.0" layoutY="62.0" prefHeight="26.0" prefWidth="207.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtAccountID" editable="false" labelFloat="true" layoutX="554.0" layoutY="65.0" prefHeight="26.0" prefWidth="207.0" promptText="Account number" />
+      <JFXTextField fx:id="txtLoanType" editable="false" labelFloat="true" layoutX="40.0" layoutY="147.0" prefHeight="26.0" prefWidth="207.0" promptText="Loan Type" />
+      <JFXTextField fx:id="txtAmount" editable="false" labelFloat="true" layoutX="293.0" layoutY="148.0" prefHeight="26.0" prefWidth="207.0" promptText="Amount" />
+      <JFXTextField fx:id="txtPrincipal" editable="false" labelFloat="true" layoutX="551.0" layoutY="151.0" prefHeight="26.0" prefWidth="207.0" promptText="Total Payment" />
+      <JFXTextField fx:id="txtIssueDate" editable="false" labelFloat="true" layoutX="40.0" layoutY="233.0" prefHeight="26.0" prefWidth="207.0" promptText="Issue Date" />
+      <JFXTextField fx:id="txtPeriod" editable="false" labelFloat="true" layoutX="293.0" layoutY="234.0" prefHeight="26.0" prefWidth="207.0" promptText="Period (Year)" />
+      <JFXTextField fx:id="txtEndDate" editable="false" labelFloat="true" layoutX="551.0" layoutY="237.0" prefHeight="26.0" prefWidth="207.0" promptText="Next Payment Due Date" />
+      <JFXTextField fx:id="txtFirstGName" editable="false" labelFloat="true" layoutX="43.0" layoutY="324.0" prefHeight="26.0" prefWidth="207.0" promptText="First Guarantor Name" />
+      <JFXTextField fx:id="txtSecondGName" editable="false" labelFloat="true" layoutX="293.0" layoutY="408.0" prefHeight="26.0" prefWidth="207.0" promptText="Second Guarantor Name" />
+      <JFXButton fx:id="btnClose" layoutX="297.0" layoutY="590.0" onAction="#closeOnAction" prefHeight="26.0" prefWidth="109.0" style="-fx-background-color: red;" text="Close" textFill="WHITE" />
+      <JFXTextField fx:id="txtFirstGNic" editable="false" labelFloat="true" layoutX="296.0" layoutY="324.0" prefHeight="26.0" prefWidth="207.0" promptText="First Guarantor Nic" />
+      <JFXTextField fx:id="txtFirstGTel" editable="false" labelFloat="true" layoutX="551.0" layoutY="324.0" prefHeight="26.0" prefWidth="207.0" promptText="First Guarantor Tel" />
+      <JFXTextField fx:id="txtFirstGAddress" editable="false" labelFloat="true" layoutX="40.0" layoutY="408.0" prefHeight="26.0" prefWidth="207.0" promptText="First Guarantor Address" />
+      <JFXTextField fx:id="txtSecondGNic" editable="false" labelFloat="true" layoutX="548.0" layoutY="408.0" prefHeight="26.0" prefWidth="207.0" promptText="Second Guarantor Nic" />
+      <JFXTextField fx:id="txtSecondGTel" editable="false" labelFloat="true" layoutX="40.0" layoutY="493.0" prefHeight="26.0" prefWidth="207.0" promptText="Second Guarantor Tel" />
+      <JFXTextField fx:id="txtSecondGAddress" editable="false" labelFloat="true" layoutX="295.0" layoutY="493.0" prefHeight="26.0" prefWidth="207.0" promptText="Second Guarantor Address" />
+      <JFXButton fx:id="btnDelete" layoutX="429.0" layoutY="590.0" onAction="#deleteOnAction" prefHeight="26.0" prefWidth="109.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>

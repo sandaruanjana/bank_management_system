@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneEditUser" prefHeight="738" prefWidth="1179.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.UserView.EditUserController">
+   <children>
+      <HBox layoutY="-4.0" prefHeight="56.0" prefWidth="1179.0" style="-fx-background-color: #1b55e2;">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="8.0" />
+            <Label alignment="CENTER" prefHeight="54.0" prefWidth="178.0" text="Manage User Data" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="18" />
+               </graphic>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <JFXTextField fx:id="txtSearchUsername" labelFloat="true" layoutX="167.0" layoutY="159.0" onAction="#SearchUsernameOnAction" promptText="Enter Username" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="386.0" layoutY="158.0" />
+      <Label layoutX="42.0" layoutY="161.0" text="Seach User :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUsername" layoutX="167.0" layoutY="289.0" prefHeight="26.0" prefWidth="242.0" promptText="Username" />
+      <Label layoutX="50.0" layoutY="296.0" text="Username :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fx:id="iconSearch" fill="#001da9" glyphName="SEARCH" layoutX="343.0" layoutY="179.0" onMouseClicked="#iconSearchMouseClick" size="18" wrappingWidth="17.542820930480957" />
+      <Label layoutX="93.0" layoutY="384.0" text="Role :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbRole" layoutX="166.0" layoutY="380.0" prefHeight="26.0" prefWidth="170.0" promptText="Select Role" />
+      <JFXButton fx:id="btnUpdateUser" layoutX="307.0" layoutY="534.0" onAction="#userUpdateOnAction" prefHeight="30.0" prefWidth="157.0" style="-fx-background-color: #001da9;" text="Update Profile" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SAVE" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="489.0" layoutY="534.0" onAction="#UserDeleteAction" prefHeight="30.0" prefWidth="157.0" style="-fx-background-color: red;" text="Delete Profile" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" />
+         </graphic>
+      </JFXButton>
+      <Label fx:id="lblFieldEmpty" layoutX="166.0" layoutY="196.0" text="FIeld Empty !" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>

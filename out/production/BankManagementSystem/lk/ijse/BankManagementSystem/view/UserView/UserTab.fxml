@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPaneUserTab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="1179.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.UserView.UserTabController">
+   <top>
+      <JFXTabPane fx:id="tabPane" prefHeight="741.0" prefWidth="1259.0" style="-fx-background-color: white;" stylesheets="@../../resources/main.css" BorderPane.alignment="CENTER">
+         <tabs>
+            <Tab fx:id="tabAddUser" text="Add User">
+              <content>
+              </content>
+            </Tab>
+            <Tab fx:id="tabManageUser" text="Manage User">
+              <content>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </top>
+</BorderPane>

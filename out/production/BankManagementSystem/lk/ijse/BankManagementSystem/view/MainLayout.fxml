@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneMainLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="1440.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.MainLayoutController">
+   <left>
+      <VBox prefHeight="746.0" prefWidth="262.0" style="-fx-background-color: #0d3fb9;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="118.0" prefWidth="150.0">
+               <children>
+                  <ImageView fitHeight="68.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/white-logo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="65.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children></VBox>
+            <JFXButton fx:id="btnDashboard" alignment="CENTER" onAction="#dashboardOnAction" prefHeight="66.0" prefWidth="264.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="TH_LARGE" size="18" />
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnCustomer" onAction="#customerOnAction" prefHeight="66.0" prefWidth="264.0" text="Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="18" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAccount" onAction="#accountOnAction" prefHeight="66.0" prefWidth="264.0" text="Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CREDIT_CARD" size="18" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnTransaction" onAction="#transactionOnAction" prefHeight="66.0" prefWidth="264.0" text="Transaction" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="EXCHANGE" size="18" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnLoan" onAction="#loanOnAction" prefHeight="66.0" prefWidth="264.0" text="Loan" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CHECK_SQUARE_ALT" size="18" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnPayment" alignment="CENTER" onAction="#paymentOnAction" prefHeight="66.0" prefWidth="264.0" text="Payment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" size="18" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnUser" onAction="#userOnAction" prefHeight="66.0" prefWidth="264.0" text="User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="18" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

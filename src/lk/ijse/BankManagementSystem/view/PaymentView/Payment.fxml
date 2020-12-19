@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPanePayment" prefHeight="738.0" prefWidth="1179.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.PaymentView.PaymentController">
+   <children>
+      <JFXTextField fx:id="txtSearchLoanID" layoutX="47.0" layoutY="125.0" onAction="#searchOnAction" prefHeight="26.0" prefWidth="247.0" promptText="Enter Loan Number" />
+      <JFXButton fx:id="btnPayLoan" layoutX="338.0" layoutY="118.0" onAction="#PayLoanOnAction" style="-fx-background-color: #0d3fb9;" text="Pay Loan" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tableLoanPayment" layoutX="338.0" layoutY="186.0" prefHeight="530.0" prefWidth="825.0">
+        <columns>
+          <TableColumn fx:id="colPaymentID" prefWidth="93.60003662109375" text="Payment ID" />
+            <TableColumn fx:id="colCustomerName" prefWidth="130.40005493164062" text="Customer" />
+          <TableColumn fx:id="colLoanID" prefWidth="108.79998779296875" text="Loan ID" />
+            <TableColumn fx:id="colPaymentDate" prefWidth="124.79998779296875" text="Payment Date" />
+            <TableColumn fx:id="colFine" prefWidth="102.39996337890625" text="Fine" />
+            <TableColumn fx:id="colAmount" prefWidth="116.80010986328125" text="Amount" />
+            <TableColumn fx:id="colPaymentMethod" minWidth="0.0" prefWidth="143.99993896484375" text="Payment Method" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtCustomerName" editable="false" labelFloat="true" layoutX="47.0" layoutY="240.0" prefHeight="26.0" prefWidth="247.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtAccountID" editable="false" labelFloat="true" layoutX="47.0" layoutY="307.0" prefHeight="26.0" prefWidth="247.0" promptText="Account Number" />
+      <JFXTextField fx:id="txtLoanType" editable="false" labelFloat="true" layoutX="47.0" layoutY="373.0" prefHeight="26.0" prefWidth="247.0" promptText="Loan Type" />
+      <JFXTextField fx:id="txtLoanAmount" editable="false" labelFloat="true" layoutX="47.0" layoutY="441.0" prefHeight="26.0" prefWidth="247.0" promptText="Loan Amount" />
+      <JFXTextField fx:id="txtPrincipalBalance" editable="false" labelFloat="true" layoutX="47.0" layoutY="505.0" prefHeight="26.0" prefWidth="247.0" promptText="Total Amount Due" />
+      <JFXTextField fx:id="txtIssueDate" editable="false" labelFloat="true" layoutX="47.0" layoutY="573.0" prefHeight="26.0" prefWidth="247.0" promptText="Issue Date" />
+      <JFXTextField fx:id="txtEndDate" editable="false" labelFloat="true" layoutX="47.0" layoutY="635.0" prefHeight="26.0" prefWidth="247.0" promptText="Next Payment Due Date" />
+      <Label layoutX="78.0" layoutY="72.0" text="Search Loan Information">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWrongLoanNumber" layoutX="47.0" layoutY="163.0" text="Wrong Loan Number !" textFill="RED" visible="false" />
+      <Label layoutX="14.0" layoutY="14.0" text="Manage Payments">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneAccess" prefHeight="738.0" prefWidth="1179.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BankManagementSystem.view.UserView.AccessController">
+   <children>
+      <Label layoutX="344.0" layoutY="317.0" style="-fx-background-color: #cc3333;" text=" Access Denied " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
