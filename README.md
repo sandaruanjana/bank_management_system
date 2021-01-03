@@ -4,7 +4,7 @@ This is a standalone java application for bank branches. This system very user
 friendly and written in Java and MySQL. The bank manager and employee can 
 access this system and they have their own system privilege.
 
-Technology Stack:  Java /  MYSQL 
+Technology Stack:  Java /  MYSQL <br />
 Architectural Design:  Model View Controller Architecture
 
 ![login](https://user-images.githubusercontent.com/76255370/103474122-b924eb80-4dc6-11eb-9288-34e3672fd825.png)
